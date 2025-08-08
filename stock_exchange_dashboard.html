@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Stock Exchange Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .tableauPlaceholder {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h3>Mongolian Stock Exchange Dashboard</h3>
+    </header>
+    <blockquote>
+        A deep-dive financial and non-financial analysis of companies listed on the Mongolian Stock Exchange (MSE A).
+        This dashboard helps identify trends, patterns, and signals across various sectors — making it useful for
+        investors, analysts, and those curious about Mongolia’s capital market landscape.
+    </blockquote>
+    </hr>
+
+    <nav>
+        <a href="generic.html">Back</a>
+        <a href="covid_dashboard.html">Covid-19</a>
+        <a href="vehicles_dashboard.html">Vehicles</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <!-- Tableau Embed -->
+    <div class='tableauPlaceholder' id='viz1754605161654' style='position: relative'>
+        <noscript>
+            <a href='#'><img alt='Cover ' src='https://public.tableau.com/static/images/Sa/Saruultugs1/Cover/1_rss.png'
+                    style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Saruultugs1/Cover' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Sa/Saruultugs1/Cover/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1754605161654');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '827px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '827px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+</body>
+
+</html>
